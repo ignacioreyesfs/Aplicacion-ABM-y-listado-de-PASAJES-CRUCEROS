@@ -1,2 +1,2 @@
-# gdd-C-SQL-Server
+# GDD C# - SQL SERVER
 TP GDD 2019
