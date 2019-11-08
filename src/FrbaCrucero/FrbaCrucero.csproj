@@ -1,0 +1,516 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{11BD0A38-F064-4794-9845-D4C99E7D45E9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FrbaCrucero</RootNamespace>
+    <AssemblyName>FrbaCrucero</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ExpressionBlendVersion>5.0.40218.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbmCrucero\AgregarCrucero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmCrucero\AgregarCrucero.Designer.cs">
+      <DependentUpon>AgregarCrucero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmCrucero\BajaCrucero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmCrucero\BajaCrucero.Designer.cs">
+      <DependentUpon>BajaCrucero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmCrucero\BajaDefinitiva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmCrucero\BajaDefinitiva.Designer.cs">
+      <DependentUpon>BajaDefinitiva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmCrucero\BajaTemporal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmCrucero\BajaTemporal.Designer.cs">
+      <DependentUpon>BajaTemporal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmCrucero\CancelarPasajesOReprogramar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmCrucero\CancelarPasajesOReprogramar.Designer.cs">
+      <DependentUpon>CancelarPasajesOReprogramar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmCrucero\ListadoCrucerosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmCrucero\ListadoCrucerosForm.Designer.cs">
+      <DependentUpon>ListadoCrucerosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmCrucero\ModificarCrucero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmCrucero\ModificarCrucero.Designer.cs">
+      <DependentUpon>ModificarCrucero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmCrucero\ReprogramarViaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmCrucero\ReprogramarViaje.Designer.cs">
+      <DependentUpon>ReprogramarViaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmCrucero\SeleccionarFabricante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmCrucero\SeleccionarFabricante.Designer.cs">
+      <DependentUpon>SeleccionarFabricante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmCrucero\SeleccionarFecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmCrucero\SeleccionarFecha.Designer.cs">
+      <DependentUpon>SeleccionarFecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmRecorrido\AgregarRecorrido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmRecorrido\AgregarRecorrido.Designer.cs">
+      <DependentUpon>AgregarRecorrido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmRecorrido\ListadoRecorridoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmRecorrido\ListadoRecorridoForm.Designer.cs">
+      <DependentUpon>ListadoRecorridoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmRecorrido\ModificarRecorrido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmRecorrido\ModificarRecorrido.Designer.cs">
+      <DependentUpon>ModificarRecorrido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmRecorrido\SeleccionarPuerto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmRecorrido\SeleccionarPuerto.Designer.cs">
+      <DependentUpon>SeleccionarPuerto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmRol\AgregarFuncionalidadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmRol\AgregarFuncionalidadForm.Designer.cs">
+      <DependentUpon>AgregarFuncionalidadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmRol\ListadoRolesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmRol\ListadoRolesForm.Designer.cs">
+      <DependentUpon>ListadoRolesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmRol\RolForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmRol\RolForm.Designer.cs">
+      <DependentUpon>RolForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompraReservaPasaje\CompletarDatosCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompraReservaPasaje\CompletarDatosCliente.Designer.cs">
+      <DependentUpon>CompletarDatosCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompraReservaPasaje\Comprar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompraReservaPasaje\Comprar.Designer.cs">
+      <DependentUpon>Comprar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompraReservaPasaje\CompraReservaPasajeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompraReservaPasaje\CompraReservaPasajeForm.Designer.cs">
+      <DependentUpon>CompraReservaPasajeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompraReservaPasaje\SeleccionarCabina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompraReservaPasaje\SeleccionarCabina.Designer.cs">
+      <DependentUpon>SeleccionarCabina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompraReservaPasaje\SeleccionarCompraOReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompraReservaPasaje\SeleccionarCompraOReserva.Designer.cs">
+      <DependentUpon>SeleccionarCompraOReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompraReservaPasaje\SeleccionarFecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompraReservaPasaje\SeleccionarFecha.Designer.cs">
+      <DependentUpon>SeleccionarFecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompraReservaPasaje\SeleccionarPasajeros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompraReservaPasaje\SeleccionarPasajeros.Designer.cs">
+      <DependentUpon>SeleccionarPasajeros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompraReservaPasaje\SeleccionarPuerto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompraReservaPasaje\SeleccionarPuerto.Designer.cs">
+      <DependentUpon>SeleccionarPuerto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneracionViaje\ListadoCruceros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneracionViaje\ListadoCruceros.Designer.cs">
+      <DependentUpon>ListadoCruceros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneracionViaje\ListadoRecorrido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneracionViaje\ListadoRecorrido.Designer.cs">
+      <DependentUpon>ListadoRecorrido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneracionViaje\SeleccionarFecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneracionViaje\SeleccionarFecha.Designer.cs">
+      <DependentUpon>SeleccionarFecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneracionViaje\SeleccionarPuerto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneracionViaje\SeleccionarPuerto.Designer.cs">
+      <DependentUpon>SeleccionarPuerto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListadoEstadistico\CrucerosSinServicio.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ListadoEstadistico\ListadoEstadisticoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListadoEstadistico\ListadoEstadisticoForm.Designer.cs">
+      <DependentUpon>ListadoEstadisticoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListadoEstadistico\RecorridosConMasCabinas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ListadoEstadistico\RecorridosConMasPasajes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneracionViaje\FormGenerarViaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneracionViaje\FormGenerarViaje.Designer.cs">
+      <DependentUpon>FormGenerarViaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\Cabina.cs" />
+    <Compile Include="Modelos\Cliente.cs" />
+    <Compile Include="Modelos\Compra.cs" />
+    <Compile Include="Modelos\CrearCompra.cs" />
+    <Compile Include="Modelos\CrearCrucero.cs" />
+    <Compile Include="Modelos\CrearRecorrido.cs" />
+    <Compile Include="Modelos\CrearRecorridoXTramo.cs" />
+    <Compile Include="Modelos\CrearReserva.cs" />
+    <Compile Include="Modelos\CrearViaje.cs" />
+    <Compile Include="Modelos\Crucero.cs" />
+    <Compile Include="Modelos\Fabricante.cs" />
+    <Compile Include="Modelos\Funcionalidad.cs" />
+    <Compile Include="Modelos\CrearPasaje.cs" />
+    <Compile Include="Modelos\ListadosEstadisticos.cs" />
+    <Compile Include="Modelos\MetodoPago.cs" />
+    <Compile Include="Modelos\Pasaje.cs" />
+    <Compile Include="Modelos\Puerto.cs" />
+    <Compile Include="Modelos\Recorrido.cs" />
+    <Compile Include="Modelos\Reserva.cs" />
+    <Compile Include="Modelos\Rol.cs" />
+    <Compile Include="Modelos\TipoCabina.cs" />
+    <Compile Include="Modelos\Tramo.cs" />
+    <Compile Include="Modelos\Usuario.cs" />
+    <Compile Include="Modelos\Viaje.cs" />
+    <Compile Include="PagoReserva\ReservaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PagoReserva\ReservaForm.Designer.cs">
+      <DependentUpon>ReservaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PagoReserva\SeleccionarMetodoPagoReservaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PagoReserva\SeleccionarMetodoPagoReservaForm.Designer.cs">
+      <DependentUpon>SeleccionarMetodoPagoReservaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PagoReserva\SeleccionarReservaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PagoReserva\SeleccionarReservaForm.Designer.cs">
+      <DependentUpon>SeleccionarReservaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositorios\AbstractRepo.cs" />
+    <Compile Include="Repositorios\RepoCabina.cs" />
+    <Compile Include="Repositorios\RepoCliente.cs" />
+    <Compile Include="Repositorios\RepoCompra.cs" />
+    <Compile Include="Repositorios\RepoMetodoPago.cs" />
+    <Compile Include="Repositorios\RepoPasaje.cs" />
+    <Compile Include="Repositorios\RepoReserva.cs" />
+    <Compile Include="Repositorios\RepoTipoCabina.cs" />
+    <Compile Include="Repositorios\RepoTop5.cs" />
+    <Compile Include="Repositorios\IRepo.cs" />
+    <Compile Include="Repositorios\RepoCrucero.cs" />
+    <Compile Include="Repositorios\RepoFabricante.cs" />
+    <Compile Include="Repositorios\RepoFuncionalidad.cs" />
+    <Compile Include="Repositorios\RepoPuerto.cs" />
+    <Compile Include="Repositorios\RepoRecorrido.cs" />
+    <Compile Include="Repositorios\RepoRol.cs" />
+    <Compile Include="Repositorios\RepoTramo.cs" />
+    <Compile Include="Repositorios\RepoUsuario.cs" />
+    <Compile Include="Repositorios\RepoViaje.cs" />
+    <Compile Include="Utils\ConexionDB.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\SPContent.cs" />
+    <EmbeddedResource Include="AbmCrucero\AgregarCrucero.resx">
+      <DependentUpon>AgregarCrucero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmCrucero\BajaCrucero.resx">
+      <DependentUpon>BajaCrucero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmCrucero\BajaCruceroForm.resx" />
+    <EmbeddedResource Include="AbmCrucero\BajaDefinitiva.resx">
+      <DependentUpon>BajaDefinitiva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmCrucero\BajaTemporal.resx">
+      <DependentUpon>BajaTemporal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmCrucero\CancelarPasajesOReprogramar.resx">
+      <DependentUpon>CancelarPasajesOReprogramar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmCrucero\ListadoCrucerosForm.resx">
+      <DependentUpon>ListadoCrucerosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmCrucero\ModificarCrucero.resx">
+      <DependentUpon>ModificarCrucero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmCrucero\ReprogramarViaje.resx">
+      <DependentUpon>ReprogramarViaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmCrucero\SeleccionarFabricante.resx">
+      <DependentUpon>SeleccionarFabricante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmCrucero\SeleccionarFecha.resx">
+      <DependentUpon>SeleccionarFecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmRecorrido\AgregarRecorrido.resx">
+      <DependentUpon>AgregarRecorrido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmRecorrido\ListadoRecorridoForm.resx">
+      <DependentUpon>ListadoRecorridoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmRecorrido\ModificarRecorrido.resx">
+      <DependentUpon>ModificarRecorrido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmRecorrido\SeleccionarPuerto.resx">
+      <DependentUpon>SeleccionarPuerto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmRol\AgregarFuncionalidadForm.resx">
+      <DependentUpon>AgregarFuncionalidadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmRol\ListadoRolesForm.resx">
+      <DependentUpon>ListadoRolesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmRol\RolForm.resx">
+      <DependentUpon>RolForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompraReservaPasaje\CompletarDatosCliente.resx">
+      <DependentUpon>CompletarDatosCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompraReservaPasaje\Comprar.resx">
+      <DependentUpon>Comprar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompraReservaPasaje\CompraReservaPasajeForm.resx">
+      <DependentUpon>CompraReservaPasajeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompraReservaPasaje\SeleccionarCabina.resx">
+      <DependentUpon>SeleccionarCabina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompraReservaPasaje\SeleccionarCompraOReserva.resx">
+      <DependentUpon>SeleccionarCompraOReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompraReservaPasaje\SeleccionarFecha.resx">
+      <DependentUpon>SeleccionarFecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompraReservaPasaje\SeleccionarPasajeros.resx">
+      <DependentUpon>SeleccionarPasajeros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompraReservaPasaje\SeleccionarPuerto.resx">
+      <DependentUpon>SeleccionarPuerto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneracionViaje\FormGenerarViaje.resx">
+      <DependentUpon>FormGenerarViaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneracionViaje\ListadoCruceros.resx">
+      <DependentUpon>ListadoCruceros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneracionViaje\ListadoRecorrido.resx">
+      <DependentUpon>ListadoRecorrido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneracionViaje\SeleccionarFecha.resx">
+      <DependentUpon>SeleccionarFecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneracionViaje\SeleccionarPuerto.resx">
+      <DependentUpon>SeleccionarPuerto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListadoEstadistico\ListadoEstadisticoForm.resx">
+      <DependentUpon>ListadoEstadisticoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagoReserva\ReservaForm.resx">
+      <DependentUpon>ReservaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagoReserva\SeleccionarMetodoPagoReservaForm.resx">
+      <DependentUpon>SeleccionarMetodoPagoReservaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagoReserva\SeleccionarReservaForm.resx">
+      <DependentUpon>SeleccionarReservaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\FrbaCrucero.AbmCrucero.AgregarCrucero.resources" />
+    <EmbeddedResource Include="obj\Debug\FrbaCrucero.AbmCrucero.BajaCrucero.resources" />
+    <EmbeddedResource Include="obj\Debug\FrbaCrucero.AbmCrucero.BajaDefinitiva.resources" />
+    <EmbeddedResource Include="obj\Debug\FrbaCrucero.AbmCrucero.BajaTemporal.resources" />
+    <EmbeddedResource Include="obj\Debug\FrbaCrucero.AbmCrucero.CancelarPasajesOReprogramar.resources" />
+    <EmbeddedResource Include="obj\Debug\FrbaCrucero.AbmCrucero.ListadoCrucerosForm.resources" />
+    <EmbeddedResource Include="obj\Debug\FrbaCrucero.AbmCrucero.ModificarCrucero.resources" />
+    <EmbeddedResource Include="obj\Debug\FrbaCrucero.AbmCrucero.ReprogramarViaje.resources" />
+    <EmbeddedResource Include="obj\Debug\FrbaCrucero.AbmCrucero.SeleccionarFabricante.resources" />
+    <EmbeddedResource Include="obj\Debug\FrbaCrucero.AbmCrucero.SeleccionarFecha.resources" />
+    <EmbeddedResource Include="obj\Debug\FrbaCrucero.AbmRecorrido.AgregarRecorrido.resources" />
+    <EmbeddedResource Include="obj\Debug\FrbaCrucero.AbmRecorrido.ListadoRecorridoForm.resources" />
+    <EmbeddedResource Include="obj\Debug\FrbaCrucero.AbmRecorrido.ModificarRecorrido.resources" />
+    <EmbeddedResource Include="obj\Debug\FrbaCrucero.AbmRecorrido.SeleccionarPuerto.resources" />
+    <EmbeddedResource Include="obj\Debug\FrbaCrucero.AbmRol.FormAgregarFuncionalidad.resources" />
+    <EmbeddedResource Include="obj\Debug\FrbaCrucero.AbmRol.ListadoRolesForm.resources" />
+    <EmbeddedResource Include="obj\Debug\FrbaCrucero.AbmRol.RolForm.resources" />
+    <EmbeddedResource Include="obj\Debug\FrbaCrucero.CompraPasaje.CompraReservaPasajeForm.resources" />
+    <EmbeddedResource Include="obj\Debug\FrbaCrucero.CompraPasaje.SeleccionarFecha.resources" />
+    <EmbeddedResource Include="obj\Debug\FrbaCrucero.CompraPasaje.SeleccionarPuerto.resources" />
+    <EmbeddedResource Include="obj\Debug\FrbaCrucero.CompraReservaPasaje.CompletarDatosCliente.resources" />
+    <EmbeddedResource Include="obj\Debug\FrbaCrucero.CompraReservaPasaje.Comprar.resources" />
+    <EmbeddedResource Include="obj\Debug\FrbaCrucero.CompraReservaPasaje.SeleccionarCabina.resources" />
+    <EmbeddedResource Include="obj\Debug\FrbaCrucero.CompraReservaPasaje.SeleccionarCompraOReserva.resources" />
+    <EmbeddedResource Include="obj\Debug\FrbaCrucero.CompraReservaPasaje.SeleccionarPasajeros.resources" />
+    <EmbeddedResource Include="obj\Debug\FrbaCrucero.GeneracionViaje.FormGenerarViaje.resources" />
+    <EmbeddedResource Include="obj\Debug\FrbaCrucero.GeneracionViaje.ListadoCruceros.resources" />
+    <EmbeddedResource Include="obj\Debug\FrbaCrucero.GeneracionViaje.ListadoRecorrido.resources" />
+    <EmbeddedResource Include="obj\Debug\FrbaCrucero.GeneracionViaje.SeleccionarFecha.resources" />
+    <EmbeddedResource Include="obj\Debug\FrbaCrucero.GeneracionViaje.SeleccionarPuerto.resources" />
+    <EmbeddedResource Include="obj\Debug\FrbaCrucero.ListadoEstadistico.ListadoEstadisticoForm.resources" />
+    <EmbeddedResource Include="obj\Debug\FrbaCrucero.Login.resources" />
+    <EmbeddedResource Include="obj\Debug\FrbaCrucero.MenuPrincipalForm.resources" />
+    <EmbeddedResource Include="obj\Debug\FrbaCrucero.Properties.Resources.resources" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="bin\Debug\FrbaCrucero.exe.config" />
+    <None Include="bin\Debug\FrbaCrucero.vshost.exe.config" />
+    <None Include="bin\Debug\FrbaCrucero.vshost.exe.manifest" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\FrbaCrucero.csproj.GenerateResource.Cache" />
+    <None Include="obj\Debug\FrbaCrucero.csprojResolveAssemblyReference.cache" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\FrbaCrucero.exe" />
+    <Content Include="bin\Debug\FrbaCrucero.pdb" />
+    <Content Include="bin\Debug\FrbaCrucero.vshost.exe" />
+    <Content Include="obj\Debug\FrbaCrucero.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\FrbaCrucero.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
